@@ -56,4 +56,4 @@ from .qdot import QuantumDot
 from .builder.builder_base import BuilderManyBody as Builder_many_body
 from .builder.builder_elph import BuilderElPh as Builder_elph
 
-__version__ = '1.1'
+__version__ = '1.2.0'
