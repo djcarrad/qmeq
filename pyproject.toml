@@ -9,10 +9,21 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["qmeq"]
+packages = ['qmeq',
+                'qmeq/approach',
+                'qmeq/approach/base',
+                'qmeq/approach/elph',
+                'qmeq/builder',
+                'qmeq/specfunc',
+                'qmeq/tests',
+                'qmeq/wrappers']
 
 [tool.setuptools.package-data]
-qmeq = ["*.pyx", "*.pxd", "*.c"]
+qmeq/approach=['*.pyx', '*.c', '*.pyd', '*.o', '*.so']
+qmeq/approach/base=['*.pyx', '*.c', '*.pyd', '*.o', '*.so']
+qmeq/approach/elph=['*.pyx', '*.c', '*.pyd', '*.o', '*.so']
+qmeq/specfunc=['*.pyx', '*.c', '*.pyd', '*.o', '*.so']
+qmeq/wrappers=['*.pyx', '*.c', '*.pyd', '*.o', '*.so']
 
 [project]
 name = "qmeq"
