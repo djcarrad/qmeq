@@ -34,26 +34,26 @@ duplicate existing calculations, check applicability of different methods, or
 simply discover new kind of physics using different approximate master equations.
 """
 
-from .approach.aprclass import Approach
-from .approach.aprclass import ApproachElPh
-from .approach.aprclass import ApproachBase2vN
-from .builder.builder import Builder
-from .builder.builder_base import BuilderBase
-from .builder.builder_base import BuilderManyBody
-from .builder.builder_base import ModelParameters
-from .builder.builder_elph import BuilderElPh
-from .builder.builder_elph import BuilderManyBodyElPh
-from .builder.funcprop import FunctionProperties
-from .indexing import StateIndexing
-from .indexing import StateIndexingPauli
-from .indexing import StateIndexingDM
-from .indexing import StateIndexingDMc
-from .leadstun import LeadsTunneling
-from .baths import PhononBaths
-from .qdot import QuantumDot
+from qmeq.approach.aprclass import Approach
+from qmeq.approach.aprclass import ApproachElPh
+from qmeq.approach.aprclass import ApproachBase2vN
+from qmeq.builder.builder import Builder
+from qmeq.builder.builder_base import BuilderBase
+from qmeq.builder.builder_base import BuilderManyBody
+from qmeq.builder.builder_base import ModelParameters
+from qmeq.builder.builder_elph import BuilderElPh
+from qmeq.builder.builder_elph import BuilderManyBodyElPh
+from qmeq.builder.funcprop import FunctionProperties
+from qmeq.indexing import StateIndexing
+from qmeq.indexing import StateIndexingPauli
+from qmeq.indexing import StateIndexingDM
+from qmeq.indexing import StateIndexingDMc
+from qmeq.leadstun import LeadsTunneling
+from qmeq.baths import PhononBaths
+from qmeq.qdot import QuantumDot
 
 # Legacy class names
-from .builder.builder_base import BuilderManyBody as Builder_many_body
-from .builder.builder_elph import BuilderElPh as Builder_elph
+from qmeq.builder.builder_base import BuilderManyBody as Builder_many_body
+from qmeq.builder.builder_elph import BuilderElPh as Builder_elph
 
 __version__ = '1.2.0'
